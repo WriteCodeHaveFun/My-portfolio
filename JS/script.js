@@ -1,7 +1,7 @@
 document.addEventListener('click', onClick);
 document.addEventListener('scroll', onScroll);
 window.addEventListener('load', onLoad);
-window.addEventListener('unload', onUnload);
+// window.addEventListener('unload', onUnload);
 
 let animatedElements = document.querySelectorAll('.animate');
 let mainLights = document.querySelectorAll('.main-light');
