@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="CSS/style.css" rel="stylesheet">
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap" rel="stylesheet">
+	<title>Main</title>
+</head>
+
+<body class="other-theme">
+    <!-- <header class="main-header">
+        <nav>
+            <ul class="main-menu">
+                <li><a href="#">main</a></li>
+                <li><a href="#">about me</a></li>
+                <li><a href="#">my skills</a></li>
+                <li><a href="#">porfolio</a></li>
+                <li><a href="#">contact me</a></li>
+            </ul>
+        </nav>
+        <div class="light-1"></div>
+        <div class="light-2"></div>
+    </header> -->
+    <main>
+        <header id="mainHeader" class="main-header">
+            <nav>
+                <ul class="main-menu other-theme">
+                    <li><a href="Index.html">main</a></li>
+                    <li><a href="#aboutMe">about me</a></li>
+                    <li><a href="#mySkills">my skills</a></li>
+                    <li><a href="#portfolio">porfolio</a></li>
+                    <li><a href="#contactMe">contact me</a></li>
+                    <li><a data-theme-toggler="other-theme" href="#">theme</a></li>
+                </ul>
+            </nav>
+            <div data-scroll="hide-left" class="light-1 hide-left show-on-load"></div>
+            <div data-scroll="hide-right" class="light-2 main-light hide-right show-on-load reposition"></div>
+            <div class="light-3 main-light show-later hide-right other-theme"></div>
+            <!-- <div class="mini-light shake-vertical"></div> -->
+        </header>
+        <div class="mobile-menu-container">
+            <div class="toggle-menu-container other-theme">
+                <div class="toggle-menu other-theme">
+                    <input type="checkbox" name="open-close-mobile-menu" id="open-close-mob-menu">
+                    <label for="open-close-mob-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <!-- <nav class="hide">
+                        <ul class="main-menu">
+                            <li><a href="Index.html">main</a></li>
+                            <li><a href="#aboutMe">about me</a></li>
+                            <li><a href="#mySkills">my skills</a></li>
+                            <li><a href="#portfolio">porfolio</a></li>
+                            <li><a href="#contactMe">contact me</a></li>
+                        </ul>
+                    </nav> -->
+                </div>
+            </div>
+            <nav class="mobile-menu other-theme">
+                <div class="container">
+                    <ul class="main-menu">
+                        <li><a href="#mainHeader">main</a></li>
+                        <li><a href="#aboutMe">about me</a></li>
+                        <li><a href="#mySkills">my skills</a></li>
+                        <li><a href="#portfolio">porfolio</a></li>
+                        <li><a href="#contactMe">contact me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="decktop-menu-container other-theme">
+            <nav class="decktop-menu">
+                <div class="container">
+                    <ul>
+                        <li><a href="#mainHeader">main</a></li>
+                        <li><a href="#aboutMe">about me</a></li>
+                        <li><a href="#mySkills">my skills</a></li>
+                        <li><a href="#portfolio">porfolio</a></li>
+                        <li><a href="#contactMe">contact me</a></li>
+                        <li data-theme-toggler="other-theme"><a href="#">theme</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- <div class="decktop-menu-container">
+            <nav class="decktop-menu">
+                <div class="container">
+                    <ul>
+                        <li><a href="#mainHeader">m</a></li>
+                        <li><a href="#aboutMe">a</a></li>
+                        <li><a href="#mySkills">s</a></li>
+                        <li><a href="#portfolio">p</a></li>
+                        <li><a href="#contactMe">c</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div> -->
+        <!-- <div class="light-1"></div>
+        <div class="light-3"></div> -->
+        <section id="aboutMe" class="about-me show-effect">
+            <div class="content-container">
+                <h2 class="prep-for-show">About me</h2>
+                <div class="text-container prep-for-show">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur ad tempore quasi dignissimos accusantium pariatur error autem ullam, delectus quo praesentium possimus cum, nulla similique facilis, quidem dolores nostrum minima amet assumenda. Assumenda necessitatibus esse ex accusantium libero doloribus est, rerum quasi tempora tempore odio omnis architecto rem? Doloremque ea rerum, assumenda, esse minima libero nisi alias quidem, vitae adipisci totam accusamus beatae? Modi nihil soluta qui asperiores doloribus nesciunt!
+                    </p>
+                </div>
+                <div class="button other-theme box-shadow button-after-transition jello-animation prep-for-show"><a href="#contactMe">contact me</a></div>
+            </div>
+            <!-- <div data-scroll="move-left" class="light-1 main-light move-left first-light"></div> -->
+            
+        </section>
+        <section id="mySkills" class="my-skills show-effect">
+            <span class="light-line other-theme line-1 animate"></span>
+            <!-- <span class="light-line line-2 animate"></span> -->
+            <!-- <span class="light-line line-3 animate"></span> -->
+            <!-- <span class="light-line line-4 animate"></span> -->
+            <!-- <span class="light-line line-5 animate"></span> -->
+            <!-- <span class="light-line line-6 animate"></span> -->
+            <!-- <span class="light-line line-7 animate"></span> -->
+            <div class="content-container">
+                <h2 class="prep-for-show">my skills</h2>
+                <div class="skills-list">
+                    <ul>
+                        <li class="skill-block other-theme animate"><span class="text-with-shadow other-theme skill">JS</span><span class="percent">80%</span><span class="load-bar"></span></li>
+                        <li class="skill-block other-theme animate"><span class="text-with-shadow other-theme skill">HTML</span><span class="percent">90%</span><span class="load-bar"></span></li>
+                        <li class="skill-block other-theme animate"><span class="text-with-shadow other-theme skill">CSS</span><span class="percent">85%</span><span class="load-bar"></span></li>
+                    </ul>
+                    <!-- <div class="button additional-settings box-shadow"><a class="text-with-shadow" href="#">...</a></div> -->
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio show-effect">
+            <span class="light-line other-theme line-1 first animate"></span>
+            <!-- <span data-connected-to=".works-list .work-block:nth-child(1)" class="light-line line-2 horizontal animate"></span>
+            <span data-connected-to=".works-list .work-block:nth-child(1)" class="light-line line-3 vertical animate"></span>
+            <span data-connected-to=".works-list .work-block:nth-child(2)" class="light-line line-4 horizontal animate"></span>
+            <span data-connected-to=".works-list .work-block:nth-child(2)" class="light-line line-5 vertical animate"></span>
+            <span data-connected-to=".works-list .work-block:nth-child(3)"class="light-line line-6 horizontal animate"></span>
+            <span data-connected-to=".works-list .work-block:nth-child(3)"class="light-line line-7 vertical animate"></span> -->
+            <!-- <span class="light-line line-8 animate"></span> -->
+            <div class="content-container">
+                <h2 class="prep-for-show">porfolio</h2>
+                <div class="works-list">
+                    <ul>
+                        <li class="work-block other-theme button box-shadow animate"><a href="#"><img src="Img/form-pagehtml.png" alt=""></a></li>
+                        <li class="work-block other-theme button box-shadow animate"><a href="#"><img src="Img/indexhtml.png" alt=""></a></li>
+                        <li class="work-block other-theme button box-shadow animate"><a href="#"><img src="Img/items-listhtml.png" alt=""></a></li>
+                        <li class="work-block other-theme button box-shadow animate"><a href="#"><img src="Img/1.jpeg" alt=""></a></li>
+                        <li class="work-block other-theme button box-shadow animate"><a href="#"><img src="Img/1.jpeg" alt=""></a></li>
+                        <li class="work-block other-theme button box-shadow animate"><a href="#"><img src="Img/1.jpeg" alt=""></a></li>
+                    </ul>
+                    <!-- <div class="button additional-settings box-shadow"><a class="text-with-shadow" href="#">...</a></div> -->
+                </div>
+            </div>
+        </section>
+        <section id="contactMe" class="contact-me show-effect">
+            <span class="light-line other-theme line-1 animate"></span>
+            <div class="content-container">
+                <h2 class="prep-for-show">contact me</h2>
+                <form class="contact-me-form other-theme" action="">
+                    <div class="flex-container">
+                        <input class="first-name box-shadow other-theme animate" type="text" placeholder="First name" name="firstName" required="">
+                        <input class="last-name box-shadow other-theme animate" type="text" placeholder="Last name" name="lastName" required="">
+                    </div>
+                    <input class="box-shadow other-theme animate" type="email" placeholder="Email" name="email" required="">
+                    <textarea class="box-shadow other-theme animate" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input class="button box-shadow other-theme jello-animation animate" type="submit" value="send">
+                </form>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="JS/script.js"></script>
+</body>
+</html>
