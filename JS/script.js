@@ -1,7 +1,6 @@
 document.addEventListener('click', onClick);
 document.addEventListener('scroll', onScroll);
 window.addEventListener('load', onLoad);
-window.addEventListener('resize', onResize);
 window.addEventListener('unload', onUnload);
 
 let animatedElements = document.querySelectorAll('.animate');
@@ -19,22 +18,6 @@ animatedElements.forEach(function(elem){
 });
 
 function onClick(e){
-    // animatedElements.forEach(function(elem){
-    //     elem.classList.toggle('animate');
-    // });
-    // if(e.target.closest('.main-menu')){
-    //     if(e.target.tagName !== 'A') return;
-    //     if(e.target.href.indexOf('#') == -1) return;
-    //     // if(document.querySelector(e.target.getAttribute('href')).offsetTop < window.scrollY){
-    //     //     e.preventDefault();
-    //     //     animatedScrollTop(document.querySelector(e.target.getAttribute('href')).offsetTop);
-    //     // }else{
-    //     //     animatedScrollTop(document.querySelector(e.target.getAttribute('href')).offsetTop);
-    //     // }
-    //     // animatedScrollTop(document.querySelector(e.target.getAttribute('href')).offsetTop);
-    //     // animatedScrollBy(document.querySelector(e.target.getAttribute('href')).offsetTop - window.scrollY);
-        
-    // }
     if(e.target.closest('div.toggle-menu')){
         if(e.target.tagName !== 'INPUT') return;
         if(e.target.closest('input').checked){
@@ -112,15 +95,6 @@ function onLoad(){
     })
 }
 
-function onResize(){
-    // animatedElements.forEach(function(animatedElem){
-    //     if(!document.querySelector('.portfolio').contains(animatedElem)) return;
-    //     // animatedElem.classList.add('animate');
-    //     console.log(animatedElem.removeAttribute('style'));
-    //     if(animatedElem.hasAttribute('data-connected-to')) adaptElem(animatedElem);
-    // });
-}
-
 function onUnload(){
     clearInputCheckboxes();
 }
@@ -142,36 +116,6 @@ function adaptElem(elem){
         elem.style.height = relativeElem.getBoundingClientRect().top - elem.parentElement.getBoundingClientRect().top + 'px';
     }
 }
-
-// function animatedScrollTop(scrollToThisPos){
-// 	animate({
-// 	  duration: 1000,
-// 	  timing: quad,
-// 	  draw(progress) {
-// 	    scrollTo(0, window.pageYOffset - window.pageYOffset * progress + scrollToThisPos * progress);
-// 	  }
-// 	});
-// }
-
-// function animatedScrollDown(scrollToThisPos){
-// 	animate({
-// 	  duration: 500,
-// 	  timing: quad,
-// 	  draw(progress) {
-// 	    scrollTo(0, scrollToThisPos * progress);
-// 	  }
-// 	});
-// }
-
-// function animatedScrollBy(scrollByThisMuch){
-// 	animate({
-// 	  duration: 500,
-// 	  timing: quad,
-// 	  draw(progress) {
-// 	    scrollTo(0, scrollByThisMuch * progress);
-// 	  }
-// 	});
-// }
 
 function clearInputCheckboxes(){
     let inputs = document.querySelectorAll('input[type=checkbox]');
